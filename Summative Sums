@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SUM{
+	public static void main(String[] args) {
+		int[] myNum1 = {10, 20, 30, 40};
+		int[] myNum2 = {-10, 20, 35, 40};
+		int[] myNum3 = {10, -20, 30, 45};
+		int sum1 = 0;
+		for (int i=0; i<myNum1.length; i++) {
+			sum1 = sum1 + myNum1[i];
+		}
+		int sum2 = 0;
+		for (int i=0; i<myNum2.length; i++) {
+			sum2 = sum2 + myNum2[i];
+		}
+		int sum3 = 0;
+		for (int i=0; i<myNum3.length; i++) {
+			sum3 = sum3 + myNum1[i];
+		}
+		System.out.println("#1 Array Sum: "+ sum1);
+		System.out.println("#2 Array Sum: "+ sum2);
+		System.out.println("#3 Array Sum: "+ sum3);
+	}
+}
