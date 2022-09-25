@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class HealthyHearts{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Enter your age: ");
+        int age = Integer.parseInt(scan.nextLine());
+        
+        //maxHR = max heart rate
+        double c = 220 - age;
+        int maxHR = (int)c;
+        
+        //lowHRR = lower heart rate range
+        double b = maxHR/2;
+        int lowHRR = (int)b;
+        
+        //highHRR = higher heart rate range
+        double a = (maxHR*0.85);
+        int highHRR = (int)a;
+        System.out.println("Your maximum heart rate should be "+maxHR+" beats per minute");
+        System.out.println("Your target HR Zone is "+lowHRR+"-"+highHRR+" beats per minute");
+        scan.close();
+	}
+}
